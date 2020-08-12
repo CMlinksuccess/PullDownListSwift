@@ -3,10 +3,5 @@
 
 效果图:  
 
-![效果图1](https://github.com/CMlinksuccess/PullDownListSwift/blob/master/EffectDrawing/image1.PNG)
+<img src="https://github.com/CMlinksuccess/PullDownListSwift/blob/master/EffectDrawing/image1.PNG" width="375" height="760" alt="效果图1">
 
-![效果图2](https://github.com/CMlinksuccess/PullDownListSwift/blob/master/EffectDrawing/image2.PNG)
-
-![效果图3](https://github.com/CMlinksuccess/PullDownListSwift/blob/master/EffectDrawing/image3.PNG)
-
-![效果图4](https://github.com/CMlinksuccess/PullDownListSwift/blob/master/EffectDrawing/image4.PNG)
