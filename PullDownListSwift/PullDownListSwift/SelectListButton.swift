@@ -217,7 +217,7 @@ extension SelectListButton: UITableViewDelegate, UITableViewDataSource,UIGesture
             }
             if isShowIcon {
                 
-                cell?.imageView?.image = getBundleImage(name: "selected_icon")//UIImage(named: "pullDownListSwift.bundle/selected_icon")
+                cell?.imageView?.image = Bundle.selectIcon
             }
         }
         cell?.textLabel?.text = selectItems[indexPath.row]
@@ -265,4 +265,17 @@ func getBundleImage(name:String) -> UIImage? {
         return image
     }
     return nil
+}
+
+extension Bundle{
+    
+    static var listBundle: Bundle{
+        return Bundle(path: Bundle(for: SelectListButton.self).path(forResource: "pullDownListSwift", ofType: "bundle")!)!
+    }
+    static var selectIcon:UIImage{
+        return (UIImage(contentsOfFile: listBundle.path(forResource: "selected_icon@3x", ofType: "png")!)?.withRenderingMode(.alwaysTemplate))!
+    }
+    static var textDeleteIcon:UIImage{
+        return (UIImage(contentsOfFile: listBundle.path(forResource: "textDelete_btn@3x", ofType: "png")!)?.withRenderingMode(.alwaysOriginal))!
+    }
 }

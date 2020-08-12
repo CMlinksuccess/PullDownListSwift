@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "PullDownListSwift"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.swift_version      = "5.0"
   spec.summary      = "PullDownListSwift 给按钮或输入框添加选择列表弹框，输入框右侧图片按钮"
   spec.description  = <<-DESC

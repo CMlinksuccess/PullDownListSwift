@@ -42,7 +42,7 @@ class TextFieldSelectCell: UITableViewCell {
        super.init(style: style, reuseIdentifier: reuseIdentifier)
         titleLab.font = .systemFont(ofSize: 15)
         //UIImage(named: "pullDownListSwift.bundle/textDelete_btn")
-        deleteBtn.setImage(getBundleImage(name: "textDelete_btn"), for: .normal)
+        deleteBtn.setImage(Bundle.textDeleteIcon, for: .normal)
         deleteBtn.addTarget(self, action: #selector(buttonClick(button:)), for: .touchUpInside)
         contentView.addSubview(titleLab)
         contentView.addSubview(deleteBtn)
