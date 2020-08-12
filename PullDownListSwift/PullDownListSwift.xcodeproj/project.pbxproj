@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4D001E624E0FC1600F16896 /* PullDownListSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D001E424E0FC1600F16896 /* PullDownListSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4D001EF24E0FC5200F16896 /* RightButtonField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D001EC24E0FC5200F16896 /* RightButtonField.swift */; };
 		B4D001F024E0FC5200F16896 /* SelectListButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D001ED24E0FC5200F16896 /* SelectListButton.swift */; };
 		B4D001F124E0FC5200F16896 /* TextFieldSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D001EE24E0FC5200F16896 /* TextFieldSelectCell.swift */; };
@@ -38,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		B4D001E124E0FC1600F16896 /* PullDownListSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PullDownListSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4D001E424E0FC1600F16896 /* PullDownListSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PullDownListSwift.h; sourceTree = "<group>"; };
 		B4D001E524E0FC1600F16896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4D001EC24E0FC5200F16896 /* RightButtonField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightButtonField.swift; sourceTree = "<group>"; };
 		B4D001ED24E0FC5200F16896 /* SelectListButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectListButton.swift; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 				B4D001ED24E0FC5200F16896 /* SelectListButton.swift */,
 				B4D001EC24E0FC5200F16896 /* RightButtonField.swift */,
 				B4D001EE24E0FC5200F16896 /* TextFieldSelectCell.swift */,
-				B4D001E424E0FC1600F16896 /* PullDownListSwift.h */,
 				B4D001F224E0FC6100F16896 /* pullDownListSwift.bundle */,
 				B4D001E524E0FC1600F16896 /* Info.plist */,
 			);
@@ -131,7 +128,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4D001E624E0FC1600F16896 /* PullDownListSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

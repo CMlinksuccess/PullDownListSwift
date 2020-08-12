@@ -217,7 +217,7 @@ extension SelectListButton: UITableViewDelegate, UITableViewDataSource,UIGesture
             }
             if isShowIcon {
                 
-                cell?.imageView?.image = UIImage(named: "pullDownListSwift.bundle/selected_icon")
+                cell?.imageView?.image = getBundleImage(name: "selected_icon")//UIImage(named: "pullDownListSwift.bundle/selected_icon")
             }
         }
         cell?.textLabel?.text = selectItems[indexPath.row]
@@ -256,3 +256,10 @@ extension SelectListButton: UITableViewDelegate, UITableViewDataSource,UIGesture
     }
 }
 
+
+func getBundleImage(name:String) -> UIImage? {
+    let bundlePath = Bundle.main.path(forResource: "./pullDownListSwift", ofType: "bundle")
+    let bundle = Bundle(path: bundlePath!)
+    let imageStr = bundle?.path(forResource: name, ofType: "png")
+    return UIImage(named: imageStr ?? "")
+}
