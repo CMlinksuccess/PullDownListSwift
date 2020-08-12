@@ -4,4 +4,7 @@
 效果图:  
 
 <img src="https://github.com/CMlinksuccess/PullDownListSwift/blob/master/EffectDrawing/image1.PNG" width="375" height="760" alt="效果图1">
+<img src="https://github.com/CMlinksuccess/PullDownListSwift/blob/master/EffectDrawing/image2.PNG" width="375" height="760" alt="效果图2">
+<img src="https://github.com/CMlinksuccess/PullDownListSwift/blob/master/EffectDrawing/image3.PNG" width="375" height="760" alt="效果图3">
+<img src="https://github.com/CMlinksuccess/PullDownListSwift/blob/master/EffectDrawing/image4.PNG" width="375" height="760" alt="效果图4">
 
