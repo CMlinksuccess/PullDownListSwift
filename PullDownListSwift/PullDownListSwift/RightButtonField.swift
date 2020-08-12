@@ -64,8 +64,8 @@ public class RightButtonField: UITextField,UITextFieldDelegate {
         rightViewMode = .always
         font = .systemFont(ofSize: 15)
         let rightViews = UIView(frame: CGRect(x: 0, y: 0, width: rightViewW, height: rightViewH))
-        deleteBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: rightViewH))
-        deleteBtn.setImage(UIImage(named: "pullDownListSwift.bundle/textDelete_btn"), for: .normal)
+        deleteBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 20, height: rightViewH))//UIImage(named: "pullDownListSwift.bundle/textDelete_btn")
+        deleteBtn.setImage(getBundleImage(name: "textDelete_btn"), for: .normal)
         deleteBtn.addTarget(self, action: #selector(deleteClick), for: .touchUpInside)
         deleteBtn.isHidden = true
         imageView = UIButton(frame: CGRect(x: 20, y: 0, width: rightViewW - 20 , height: rightViewH))

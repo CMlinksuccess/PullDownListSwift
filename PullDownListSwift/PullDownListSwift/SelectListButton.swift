@@ -258,8 +258,11 @@ extension SelectListButton: UITableViewDelegate, UITableViewDataSource,UIGesture
 
 
 func getBundleImage(name:String) -> UIImage? {
-    let bundlePath = Bundle.main.path(forResource: "./pullDownListSwift", ofType: "bundle")
-    let bundle = Bundle(path: bundlePath!)
-    let imageStr = bundle?.path(forResource: name, ofType: "png")
-    return UIImage(named: imageStr ?? "")
+    let bundle = Bundle(for: SelectListButton.self)
+    if let url = bundle.url(forResource: "pullDownListSwift", withExtension: "bundle"){
+        
+        let image = UIImage(named: name, in: Bundle(url: url), compatibleWith: nil)
+        return image
+    }
+    return nil
 }

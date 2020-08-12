@@ -41,8 +41,8 @@ class TextFieldSelectCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
        super.init(style: style, reuseIdentifier: reuseIdentifier)
         titleLab.font = .systemFont(ofSize: 15)
-        
-        deleteBtn.setImage(UIImage(named: "pullDownListSwift.bundle/textDelete_btn"), for: .normal)
+        //UIImage(named: "pullDownListSwift.bundle/textDelete_btn")
+        deleteBtn.setImage(getBundleImage(name: "textDelete_btn"), for: .normal)
         deleteBtn.addTarget(self, action: #selector(buttonClick(button:)), for: .touchUpInside)
         contentView.addSubview(titleLab)
         contentView.addSubview(deleteBtn)
