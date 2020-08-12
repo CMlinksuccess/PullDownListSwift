@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/CMlinksuccess/PullDownListSwift.git", :tag => spec.version }
   spec.platform     = :ios, '9.0'
   spec.requires_arc = true
-  
+  spec.resource  = 'pullDownListSwift.bundle'
   spec.source_files  = 'PullDownListSwift/PullDownListSwift/*.{swift,h,bundle}'
   spec.frameworks = 'UIKit'
   
