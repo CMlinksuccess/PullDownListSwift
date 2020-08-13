@@ -65,8 +65,7 @@ selectTextField.iTextFont = .systemFont(ofSize: 12)
 selectTextField.selectViewHeight = 160
 selectTextField.createRightView(imageName: "open_show_icon")
 selectTextField.placeholder = "请输入昵称"
-var items = ["张三","李四","王五","赵六"]
-        
+//按钮回调事件        
 selectTextField.rightBtnClick = { [unowned self](isSel) in
    if isSel {
                 
