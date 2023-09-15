@@ -8,7 +8,7 @@
 ## CocoaPods使用
  在Podfile文件中添加：
 ```
-pod 'PullDownListSwift', '~> 1.0.2'
+pod 'PullDownListSwift'
 ```
 然后，执行下面命令：
 ```

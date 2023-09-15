@@ -52,6 +52,8 @@ class ViewController: UIViewController {
             print("选择后续操作")
         }
     }
+    
+    var items = ["张三","李四","王五","赵六"]
     //创建textField下拉列表
     func createListField() {
         view.addSubview(selectTextField)
@@ -61,11 +63,10 @@ class ViewController: UIViewController {
         selectTextField.iCornerRadius = 10
         selectTextField.iTextColor = .blue
         selectTextField.itemHeight = 40
-        selectTextField.iTextFont = .systemFont(ofSize: 12)
-        selectTextField.selectViewHeight = 160
+        selectTextField.iTextFont = .systemFont(ofSize: 15)
         selectTextField.createRightView(imageName: "open_show_icon")
         selectTextField.placeholder = "请输入昵称"
-        var items = ["张三","李四","王五","赵六"]
+        
         
         selectTextField.rightBtnClick = { [unowned self](isSel) in
             if isSel {
@@ -78,7 +79,7 @@ class ViewController: UIViewController {
         selectTextField.itemBlock = { (isDel,index,string) in
             //isDel 为是否删除选项事件
             if isDel {
-                items.remove(at: index)
+                self.items.remove(at: index)
             }
             print("index:\(index),string:\(string)")
         }
