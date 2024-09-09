@@ -51,6 +51,24 @@ class ViewController: UIViewController {
         selectButton.selectBlock = { (index, text) in
             print("选择后续操作")
         }
+        
+        var selectButton2 = SelectListButton()
+        selectButton2.frame = CGRect(x: 80, y: 650, width: 250, height: 45)
+        selectButton2.backgroundColor = .red
+        selectButton2.setTitle("不同位置显示", for: .normal)
+        view.addSubview(selectButton2)
+        //弹框列表属性设置
+        selectButton2.showSelectView(items: ["选项1","选项2","选项3","选项4","选项5","选项6","选项7","选项8","选项9","选项10","选项11","选项12","选项13","选项14","选项15","选项16","选项17","选项18","选项19","选项20"])
+        selectButton2.showType = .center
+        selectButton2.iCornerRadius = 10
+        selectButton2.iBorderWidth = 1
+        selectButton2.iTextColor = .gray
+        selectButton2.iBorderColor = .gray
+        selectButton2.isShowIcon = true
+        selectButton2.selectIndex = 5
+        selectButton2.selectBlock = { (index, text) in
+            print("选择后续操作")
+        }
     }
     
     var items = ["张三","李四","王五","赵六"]
